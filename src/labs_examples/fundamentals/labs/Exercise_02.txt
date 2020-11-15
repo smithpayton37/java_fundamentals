@@ -32,3 +32,126 @@ Cloning repository from Github
     3. Create new repository on Github
     4. Add new remote on local machine
     5. Push to new Github repository
+
+    psmith@Paytons-MacBook-Pro CodingNomads % cd ~/Documents/CodingNomads
+    psmith@Paytons-MacBook-Pro CodingNomads % mkdir git_practice
+    psmith@Paytons-MacBook-Pro CodingNomads % cd git_practice
+    psmith@Paytons-MacBook-Pro git_practice % git init
+    Initialized empty Git repository in /Users/psmith/Documents/CodingNomads/git_practice/.git/
+    psmith@Paytons-MacBook-Pro git_practice % touch file1.txt
+    psmith@Paytons-MacBook-Pro git_practice % git add file1.txt
+    psmith@Paytons-MacBook-Pro git_practice % git commit -m "file1.txt"
+    [master (root-commit) 99fdf00] file1.txt
+     1 file changed, 0 insertions(+), 0 deletions(-)
+     create mode 100644 file1.txt
+    psmith@Paytons-MacBook-Pro git_practice % git remote add git_practice https://github.com/smithpayton37/git_practice.git
+    psmith@Paytons-MacBook-Pro git_practice % git remote -v
+    git_practice	https://github.com/smithpayton37/git_practice.git (fetch)
+    git_practice	https://github.com/smithpayton37/git_practice.git (push)
+    psmith@Paytons-MacBook-Pro git_practice % git push -u git_practice master
+    Counting objects: 3, done.
+    Writing objects: 100% (3/3), 217 bytes | 217.00 KiB/s, done.
+    Total 3 (delta 0), reused 0 (delta 0)
+    To https://github.com/smithpayton37/git_practice.git
+     * [new branch]      master -> master
+    Branch 'master' set up to track remote branch 'master' from 'git_practice'.
+    psmith@Paytons-MacBook-Pro git_practice % vim file1
+    psmith@Paytons-MacBook-Pro git_practice % vim file2
+    psmith@Paytons-MacBook-Pro git_practice % vim file3
+    psmith@Paytons-MacBook-Pro git_practice % git add file1 file2 file3
+    psmith@Paytons-MacBook-Pro git_practice % git commit -m "git flow practice"
+    [master 42b5e78] git flow practice
+     3 files changed, 3 insertions(+)
+     create mode 100644 file1
+     create mode 100644 file2
+     create mode 100644 file3
+    psmith@Paytons-MacBook-Pro git_practice % git push
+    Counting objects: 5, done.
+    Delta compression using up to 4 threads.
+    Compressing objects: 100% (2/2), done.
+    Writing objects: 100% (5/5), 363 bytes | 363.00 KiB/s, done.
+    Total 5 (delta 0), reused 0 (delta 0)
+    To https://github.com/smithpayton37/git_practice.git
+       99fdf00..42b5e78  master -> master
+    psmith@Paytons-MacBook-Pro git_practice % git remote add git_practice_2 https://github.com/smithpayton37/git_practice_2.git
+    psmith@Paytons-MacBook-Pro git_practice % git remote -v
+    git_practice	https://github.com/smithpayton37/git_practice.git (fetch)
+    git_practice	https://github.com/smithpayton37/git_practice.git (push)
+    git_practice_2	https://github.com/smithpayton37/git_practice_2.git (fetch)
+    git_practice_2	https://github.com/smithpayton37/git_practice_2.git (push)
+    psmith@Paytons-MacBook-Pro git_practice % git push -u git_practice_2
+    Counting objects: 8, done.
+    Delta compression using up to 4 threads.
+    Compressing objects: 100% (3/3), done.
+    Writing objects: 100% (8/8), 548 bytes | 548.00 KiB/s, done.
+    Total 8 (delta 0), reused 0 (delta 0)
+    To https://github.com/smithpayton37/git_practice_2.git
+     * [new branch]      master -> master
+    Branch 'master' set up to track remote branch 'master' from 'git_practice_2'.
+    psmith@Paytons-MacBook-Pro git_practice % mkdir repository_clone
+    psmith@Paytons-MacBook-Pro git_practice % cd repository_clone
+    psmith@Paytons-MacBook-Pro repository_clone % git clone https://github.com/bahmutov/react-loading-skeleton.git
+    Cloning into 'react-loading-skeleton'...
+    remote: Enumerating objects: 113, done.
+    remote: Counting objects: 100% (113/113), done.
+    remote: Compressing objects: 100% (80/80), done.
+    remote: Total 473 (delta 70), reused 61 (delta 31), pack-reused 360
+    Receiving objects: 100% (473/473), 2.68 MiB | 12.13 MiB/s, done.
+    Resolving deltas: 100% (263/263), done.
+    psmith@Paytons-MacBook-Pro repository_clone % ls
+    react-loading-skeleton
+    psmith@Paytons-MacBook-Pro repository_clone % git remote add repository_clone_practice https://github.com/smithpayton37/repository_clone_practice.git
+    psmith@Paytons-MacBook-Pro repository_clone % git remote -v
+    git_practice	https://github.com/smithpayton37/git_practice.git (fetch)
+    git_practice	https://github.com/smithpayton37/git_practice.git (push)
+    git_practice_2	https://github.com/smithpayton37/git_practice_2.git (fetch)
+    git_practice_2	https://github.com/smithpayton37/git_practice_2.git (push)
+    repository_clone_practice	https://github.com/smithpayton37/repository_clone_practice.git (fetch)
+    repository_clone_practice	https://github.com/smithpayton37/repository_clone_practice.git (push)
+    psmith@Paytons-MacBook-Pro git_practice % git status
+    On branch master
+    Your branch is up to date with 'repository_clone_practice/master'.
+
+    Untracked files:
+      (use "git add <file>..." to include in what will be committed)
+
+    	repository_clone/
+
+    nothing added to commit but untracked files present (use "git add" to track)
+    psmith@Paytons-MacBook-Pro git_practice % git add repository_clone
+    warning: adding embedded git repository: repository_clone/react-loading-skeleton
+    hint: You've added another git repository inside your current repository.
+    hint: Clones of the outer repository will not contain the contents of
+    hint: the embedded repository and will not know how to obtain it.
+    hint: If you meant to add a submodule, use:
+    hint:
+    hint: 	git submodule add <url> repository_clone/react-loading-skeleton
+    hint:
+    hint: If you added this path by mistake, you can remove it from the
+    hint: index with:
+    hint:
+    hint: 	git rm --cached repository_clone/react-loading-skeleton
+    hint:
+    hint: See "git help submodule" for more information.
+    psmith@Paytons-MacBook-Pro git_practice % git status
+    On branch master
+    Your branch is up to date with 'repository_clone_practice/master'.
+
+    Changes to be committed:
+      (use "git reset HEAD <file>..." to unstage)
+
+    	new file:   repository_clone/react-loading-skeleton
+
+    psmith@Paytons-MacBook-Pro git_practice % git commit -m "Repository Clone"
+    [master e1e01ca] Repository Clone
+     1 file changed, 1 insertion(+)
+     create mode 160000 repository_clone/react-loading-skeleton
+    psmith@Paytons-MacBook-Pro git_practice % git push
+    Counting objects: 3, done.
+    Delta compression using up to 4 threads.
+    Compressing objects: 100% (3/3), done.
+    Writing objects: 100% (3/3), 335 bytes | 335.00 KiB/s, done.
+    Total 3 (delta 1), reused 0 (delta 0)
+    remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+    To https://github.com/smithpayton37/repository_clone_practice.git
+       42b5e78..e1e01ca  master -> master
