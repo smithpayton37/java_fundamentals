@@ -22,3 +22,28 @@ Example Output (pwd):
     1. Cadens-MacBook-Pro:CodingNomads cadenmackenzie$ pwd
        /Users/cadenmackenzie/Documents/CodingNomads
 
+psmith@Paytons-MacBook-Pro Documents % cd ~/Documents/CodingNomads
+psmith@Paytons-MacBook-Pro CodingNomads % mkdir Terminal_Testing
+psmith@Paytons-MacBook-Pro CodingNomads % cd Terminal_Testing
+psmith@Paytons-MacBook-Pro Terminal_Testing % touch file1.txt file2.txt file3.txt
+psmith@Paytons-MacBook-Pro Terminal_Testing % pwd
+/Users/psmith/Documents/CodingNomads/Terminal_Testing
+psmith@Paytons-MacBook-Pro Terminal_Testing % ls
+file1.txt	file2.txt	file3.txt
+psmith@Paytons-MacBook-Pro Terminal_Testing % ls -al
+total 0
+drwxr-xr-x  5 psmith  staff  160 Nov 14 23:28 .
+drwxr-xr-x@ 8 psmith  staff  256 Nov 14 23:27 ..
+-rw-r--r--  1 psmith  staff    0 Nov 14 23:28 file1.txt
+-rw-r--r--  1 psmith  staff    0 Nov 14 23:28 file2.txt
+-rw-r--r--  1 psmith  staff    0 Nov 14 23:28 file3.txt
+psmith@Paytons-MacBook-Pro Terminal_Testing % mkdir folder
+psmith@Paytons-MacBook-Pro Terminal_Testing % cp ~/Documents/CodingNomads/Terminal_Testing/file1.txt ~/Documents/CodingNomads/Terminal_Testing/folder
+psmith@Paytons-MacBook-Pro Terminal_Testing % mv ~/Documents/CodingNomads/Terminal_Testing/file2.txt ~/Documents/CodingNomads/Terminal_Testing/folder
+psmith@Paytons-MacBook-Pro Terminal_Testing % rm file3.txt
+psmith@Paytons-MacBook-Pro Terminal_Testing % rm -r folder
+psmith@Paytons-MacBook-Pro Terminal_Testing % vim file4
+psmith@Paytons-MacBook-Pro Terminal_Testing % cat file4
+Example of writing some text inside a file using Vim.
+psmith@Paytons-MacBook-Pro Terminal_Testing % grep "Example" file4
+Example of writing some text inside a file using Vim.
