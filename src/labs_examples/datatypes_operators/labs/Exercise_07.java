@@ -17,13 +17,19 @@ public class Exercise_07 {
     public static void main(String[] args) {
 
         // create scanner
-        Scanner scanner = new Scanner(System.in);
+        //Scanner scanner = new Scanner(System.in);
         // prompt user
-        System.out.print("Enter a number in days between 1 and 1,000,000: ");
+        //System.out.print("Enter a number in days between 1 and 1,000,000: ");
         // assign input to variable as int
-        int days = scanner.nextInt();
+       // int days = scanner.nextInt();
 
         // write completed code here
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a number in days between 1 and 1,000,000: ");
+        int days = scanner.nextInt();
+        int seconds = 24 * 60 * 60 * days;
+        System.out.println(seconds);
 
     }
 }
