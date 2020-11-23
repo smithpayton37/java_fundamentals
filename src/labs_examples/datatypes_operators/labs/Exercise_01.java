@@ -18,6 +18,16 @@ public class Exercise_01 {
 
         // write code here
 
+        int intVal = 3;
+        double doubleVal = 37.37;
+        float floatVal = 3.7f;
+        char charVal = 'a';
+
+        System.out.println(intVal);
+        System.out.println(doubleVal);
+        System.out.println(floatVal);
+        System.out.println(charVal);
+
     }
 }
 

@@ -14,5 +14,16 @@ public class Exercise_06 {
 
         // write code here
 
+        double r = 3.14;
+        double h = 5;
+        double pi = 3.14159;
+
+        double volume = pi * r * r * h;
+        double surfaceArea = 2 * pi * r * h + 2 * pi * r * r;
+
+
+        System.out.println(volume);
+        System.out.println(surfaceArea);
+
     }
 }
