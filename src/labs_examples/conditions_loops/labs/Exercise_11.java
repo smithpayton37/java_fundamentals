@@ -23,4 +23,92 @@ package labs_examples.conditions_loops.labs;
 
 public class Exercise_11 {
 
+    public static void main(String[] args) {
+
+        int x = 0;
+
+        for(x = 0; x <= 10; x++){
+
+            for (x = 1; x <= 10; x++){
+
+                System.out.print(x + " |");
+
+            }
+
+            System.out.println(" ");
+
+            for (x = 2; x <= 20; x += 2){
+
+                System.out.print(x + "|");
+
+            }
+
+            System.out.println(" ");
+
+            for (x = 3; x <= 30; x += 3){
+
+                System.out.print(x + "|");
+
+            }
+
+            System.out.println(" ");
+
+            for (x = 4; x <= 40; x += 4){
+
+                System.out.print(x + "|");
+
+            }
+
+            System.out.println(" ");
+
+            for (x = 5; x <= 50; x += 5){
+
+                System.out.print(x + "|");
+
+            }
+
+            System.out.println(" ");
+
+            for (x = 6; x <= 60; x += 6){
+
+                System.out.print(x + "|");
+
+            }
+
+            System.out.println(" ");
+
+            for (x = 7; x <= 70; x += 7){
+
+                System.out.print(x + "|");
+
+            }
+
+            System.out.println(" ");
+
+            for (x = 8; x <= 80; x += 8){
+
+                System.out.print(x + "|");
+
+            }
+
+            System.out.println(" ");
+
+            for (x = 9; x <= 90; x += 9){
+
+                System.out.print(x + "|");
+
+            }
+
+            System.out.println(" ");
+
+            for (x = 10; x <= 100; x += 10){
+
+                System.out.print(x + "|");
+
+            }
+
+        }
+
+    }
+
 }

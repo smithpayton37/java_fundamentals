@@ -1,5 +1,7 @@
 package labs_examples.conditions_loops.labs;
 
+import java.util.Scanner;
+
 /**
  * Conditions and Loops Exercise 5: Calculator
  *
@@ -16,4 +18,31 @@ package labs_examples.conditions_loops.labs;
  */
 
 public class Exercise_05 {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Choose a number to serve as a lower bound: ");
+        int lowerBound = scanner.nextInt();
+
+        System.out.println("Choose a number to serve as an upper bound: ");
+        int upperBound = scanner.nextInt();
+
+        int y = 0;
+
+        for(int x = lowerBound; x <= upperBound; x++){
+
+            y += x;
+
+        }
+        System.out.println(y);
+
+        int z = upperBound - lowerBound + 1;
+        int average = y / z;
+
+        System.out.println(average);
+
+
+    }
 }
