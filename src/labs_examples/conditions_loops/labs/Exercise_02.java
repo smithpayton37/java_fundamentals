@@ -20,43 +20,45 @@ public class Exercise_02 {
         // 1) create scanner (don't forget to import Scanner!)
 
         Scanner scanner = new Scanner(System.in);
+        int number = 0;
 
         // 2) prompt user
+        do {
+            System.out.println("Enter a number to pick a day of the week; -1 to quit: ");
 
-        System.out.println("Enter a number to pick a day of the week: ");
+            // 3) assign input to variable as int
 
-        // 3) assign input to variable as int
+            number = scanner.nextInt();
 
-        int number = scanner.nextInt();
+            // 4) write completed code here
 
-        // 4) write completed code here
+            if(number == -1){
+                break;
+            }
 
-        if(number > 0){
-            if(number == 1){
-                System.out.println("Monday");
+            if (number > 0 && number < 8) {
+                if (number == 1) {
+                    System.out.println("Monday");
+                } else if (number == 2) {
+                    System.out.println("Tuesday");
+                } else if (number == 3) {
+                    System.out.println("Wednesday");
+                } else if (number == 4) {
+                    System.out.println("Thursday");
+                } else if (number == 5) {
+                    System.out.println("Friday");
+                } else if (number == 6) {
+                    System.out.println("Saturday");
+                } else if (number == 7) {
+                    System.out.println("Sunday");
+                }
+
+            } else {
+                System.out.println("Invalid Input");
             }
-            else if(number == 2){
-                System.out.println("Tuesday");
-            }
-            else if(number == 3){
-                System.out.println("Wednesday");
-            }
-            else if(number == 4){
-                System.out.println("Thursday");
-            }
-            else if(number == 5){
-                System.out.println("Friday");
-            }
-            else if(number == 6){
-                System.out.println("Saturday");
-            }
-            else if(number == 7){
-                System.out.println("Sunday");
-            }
-            else{
-                System.out.println("Other");
-            }
-        }
+        } while(number != -1);
+
+        System.out.println("Thanks for playing!");
 
     }
 }

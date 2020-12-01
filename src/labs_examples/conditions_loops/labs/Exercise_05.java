@@ -29,17 +29,17 @@ public class Exercise_05 {
         System.out.println("Choose a number to serve as an upper bound: ");
         int upperBound = scanner.nextInt();
 
-        int y = 0;
+        double y = 0;
 
-        for(int x = lowerBound; x <= upperBound; x++){
+        for(double x = lowerBound; x <= upperBound; x++){
 
             y += x;
 
         }
         System.out.println(y);
 
-        int z = upperBound - lowerBound + 1;
-        int average = y / z;
+        double z = upperBound - lowerBound + 1;
+        double average = y / z;
 
         System.out.println(average);
 

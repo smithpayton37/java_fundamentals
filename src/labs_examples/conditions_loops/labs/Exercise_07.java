@@ -27,37 +27,53 @@ public class Exercise_07 {
         int letter = 0;
         int length = word.length();
 
+        int index = 0;
+        String vowels = "aeiou";
+
+        while(index < length){
+
+            char c = word.charAt(index);
+
+            if(vowels.indexOf(c) != -1){
+
+                System.out.println("The first vowel in " + word + " is: " + c);
+                break;
+
+            }
+            index++;
+        }
+
         while (end < length) {
 
-            while(word.indexOf("a") == letter){
+            if(word.indexOf("a") == letter){
 
                 System.out.println("a");
                 System.out.println(word);
                 return;
 
             }
-            while(word.indexOf("e") == letter){
+            if(word.indexOf("e") == letter){
 
                 System.out.println("e");
                 System.out.println(word);
                 return;
 
             }
-            while(word.indexOf("i") == letter){
+            if(word.indexOf("i") == letter){
 
                 System.out.println("i");
                 System.out.println(word);
                 return;
 
             }
-            while(word.indexOf("o") == letter){
+            if(word.indexOf("o") == letter){
 
                 System.out.println("o");
                 System.out.println(word);
                 return;
 
             }
-            while(word.indexOf("u") == letter){
+            if(word.indexOf("u") == letter){
 
                 System.out.println("u");
                 System.out.println(word);

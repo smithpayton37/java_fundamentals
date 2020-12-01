@@ -18,6 +18,16 @@ public class Exercise_03 {
         System.out.println("Enter a number from 1 to 12 to pick a month: ");
         int number = scanner.nextInt();
 
+        switch(number) {
+
+            case 1:
+                System.out.println("Super VIP Access");
+            case 2:
+                System.out.println("VIP Access");
+            case 3:
+                System.out.println("Member Access");
+        }
+
         switch(number){
 
             case 1:
@@ -59,8 +69,6 @@ public class Exercise_03 {
             default:
                 System.out.println("Please select a number between 1 and 12");
                 break;
-
-
         }
 
     }
