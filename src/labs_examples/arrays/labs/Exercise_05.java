@@ -10,4 +10,20 @@ package labs_examples.arrays.labs;
 
 public class Exercise_05 {
 
+    public static void main(String[] args) {
+
+        int[] array = new int[10];
+        int count = 0;
+
+        for(int x = 0; x < array.length; x++){
+            array[x] = count;
+            count++;
+        }
+
+        for(int x = 9; x > -1; x -= 2){
+            System.out.print(array[x] + " ");
+        }
+
+    }
+
 }

@@ -1,5 +1,7 @@
 package labs_examples.arrays.labs;
 
+import java.util.ArrayList;
+
 /**
  *  ArrayLists
  *
@@ -10,4 +12,40 @@ package labs_examples.arrays.labs;
  *
  */
 public class Exercise_07 {
+
+    public static void main(String[] args) {
+
+        ArrayList<String> list = new ArrayList<String>();
+
+        list.add("Hello!");
+        list.add("My");
+        list.add("name");
+        list.add("is");
+        list.add("Payton!");
+
+        System.out.println(list);
+
+        System.out.println(list.contains("name"));
+        System.out.println(list.get(0));
+        System.out.println(list.indexOf("Payton!"));
+
+        if(list.isEmpty()){
+            System.out.println("Empty");
+        }
+        else{
+            System.out.println("Not Empty");
+        }
+
+        list.remove(0);
+        System.out.println(list);
+
+        list.add(0, "Merry Christmas!");
+        System.out.println(list);
+
+        list.set(0, "Happy Holidays!");
+        System.out.println(list);
+
+
+    }
+
 }
