@@ -24,10 +24,9 @@ public class Exercise_06 {
             // swap elements at indexes in array
             // you have two indices readily available for you to use "i" (which increments) and "nums.length"
             // you've also got this "temp" variable you can use to hold a value temporarily
-            int j = 6 - i;
             temp = nums[i];
-            nums[i] = nums[j];
-            nums[j] = temp;
+            nums[i] = nums[nums.length - 1 - i];
+            nums[nums.length - 1 - i] = temp;
         }
         System.out.print("Contents of array after for loop - ");
         // print each element of the array to verify reverse order

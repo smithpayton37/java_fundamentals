@@ -20,12 +20,12 @@ public class Exercise_03 {
     public static void main(String[] args) {
 
         int[][] array = new int[5][5];
-        int count = 1;
+        int count = 3;
 
         for(int x = 0; x < array.length; x++){
             for(int y = 0; y < array[x].length; y++){
-                array[x][y] = count * 3;
-                count++;
+                array[x][y] = count;
+                count += 3;
             }
         }
 

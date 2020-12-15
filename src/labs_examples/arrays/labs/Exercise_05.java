@@ -20,7 +20,7 @@ public class Exercise_05 {
             count++;
         }
 
-        for(int x = 9; x > -1; x -= 2){
+        for(int x = 9; x >= 0; x -= 2){
             System.out.print(array[x] + " ");
         }
 
